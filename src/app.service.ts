@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { getDataApp } from './app.interface.interface';
 
 @Injectable()
 export class AppService {
-  getHello(): Object {
-    return {name:'Hello World!'};
+  getHello(): getDataApp {
+    return {success: "true",message: "success hit endpoint."};
   }
 }
